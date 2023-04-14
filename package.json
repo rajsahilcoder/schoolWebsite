@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "dev": "nodemon server.js",
-    "build":"rm -rf dist && node server.js && npm install && npm run build"
+    "build":"npm install"
   },
   "author": "",
   "license": "ISC",
