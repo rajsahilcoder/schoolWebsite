@@ -1,6 +1,6 @@
 require('dotenv').config()
 const express = require("express");
-// const connectDB = require("./db");
+const connectDB = require("./db");
 const app = express();
 const cookieParser = require("cookie-parser");
 const { adminAuth, userAuth } = require("./middleware/auth.js");
@@ -11,7 +11,7 @@ const PORT = 5000;
 
 app.set("view engine", "ejs");
 
-// connectDB();
+connectDB();
 
 app.use(express.json());
 app.use(cookieParser());
