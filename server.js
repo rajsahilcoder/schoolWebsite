@@ -25,6 +25,7 @@ var instance = new Razorpay({
   key_secret: "Mx7gKbBECWerE3aLkmSEjBcx"
 });
 app.get("/donate", (req, res) => res.render("donate"));
+app.get("/donate2", (req, res) => res.render("donate2"));
 app.post('/payment', (req, res) => {
   const amount = req.body.amount;
 

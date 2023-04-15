@@ -131,7 +131,7 @@
                 >services</a
               >
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="/donate">Payment</a
+                <a class="dropdown-item" href="/donate2">Payment</a
                 ><a class="dropdown-item" href="/login">Parent's Portal</a>
               </div>
             </li>
@@ -149,6 +149,7 @@
           <div class="block-heading">
             <h2 class="text-info">Donate Us</h2>
           </div>
+
           <form>
             <div class="mb-3">
               <label class="form-label" for="name">Name</label
@@ -276,7 +277,7 @@
           currency: "INR",
 
           order_id: orderData, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-          callback_url: "http://localhost:5000/thank",
+          callback_url: "/thank.ejs",
           prefill: {
             name: name,
             email: email,
